@@ -6,6 +6,8 @@ import os
 def nfile():
     global file
     root.title("Untitled-Notepad")
+    print("File created")
+    print("Hiii","Bye")
     file=None
     textarea.delete(1.0,END)
 
