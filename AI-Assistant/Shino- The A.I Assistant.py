@@ -5,10 +5,11 @@ import webbrowser
 import datetime
 import google.generativeai as genai
 import random
-
+from config import GENAI_API_KEY  # Import the API key from config.py
 
 def ai(prompt):
-    genai.configure(api_key="AIzaSyB8zuQL1oUKyhTMiY7cKzlMYWG446-mkcw")
+   
+    genai.configure(api_key=GENAI_API_KEY)  # Use the imported API key
     
     text=f"AI response for prompt:{prompt} \n ********************* \n \n"
     generation_config = {
